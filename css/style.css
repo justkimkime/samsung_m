@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,h5,h6,p,dl,dt{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.on{
+    background-position: bottom center;
+}
+/*전체시작*/
+#wrap{
+    width: 100%;
+}
+
+/*헤더시작*/
+#header{}
+.header_top{
+    position: relative;
+    background: url(../common/bg_top.gif);
+}
+.header_top h1{
+    width: 140px;
+    background: url(../main/logo.gif) no-repeat center center;
+    background-size: 100%;
+    text-indent: -9999px;
+
+}
+.header_top h1 a{
+    display: block;
+    height: 38px;
+    vertical-align: middle;
+}
+
+.panel{
+    padding: 9px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #10509d;
+    border-bottom: 1px solid #043d84;
+    padding-bottom: 10px;
+}
+.panel a{}
+.panel a:before,.panel a:after,.panel span{
+    width: 20px;
+    height: 2px;
+    content: "";
+    background: #fff;
+    display: block;
+    text-indent: -9999px;
+}
+.panel a span{
+    margin: 6px 0;
+}
+.gnb{}
+.gnb li{
+    float: left;
+    width: 20%;
+    background: url(../common/bg_gnb.gif);
+    padding: 6px 0;
+    border-right: 1px solid #3e3e3e;
+    border-left: 1px solid #5a5a5a;
+    border-bottom: 1px solid #3a3939;
+    box-sizing: border-box;
+}
+.gnb li:first-child{
+    border-left: 0;
+}
+.gnb li a{
+    color: #c9c9c9;
+    font-size: 11px;
+    text-align: center;
+    display: block;
+}
+
+/*컨테이너시작*/
+#container{}
+
+/*메인슬라이더시작*/
+.main_slider{
+    height: 400px;
+    background: url(../main/visual01.jpg) no-repeat ;
+    background-size: cover;
+    text-indent: -9999px;
+    position: relative;
+}
+
+.main_slider .slider_btn{
+
+}
+
+.slider_btn .l_but{
+    margin-left: 8px;
+    margin-bottom: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.slider_btn .l_but li{
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(../main/blet_visual.png) no-repeat top center;
+    margin: 0 2px;
+}
+
+.slider_btn .l_but li:first-child{
+    background-position: bottom;
+}
+.slider_btn .l_but li a{
+    display: block;
+}
+.slider_btn .r_but{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 136px;
+    height: 45px;
+    background: url(../main/btn_visual_cnt.png) no-repeat top center;
+}
+.slider_btn .r_but a{
+    display: block;
+    height: 100%;
+}
+
+/*브랜드사이트*/
+.brand_site{
+    text-align: center;
+    display: block;
+    width: 140px;
+    height: 25px;
+    text-indent: -9999px;
+    background: url(../main/brandSite_title01.png) no-repeat center center;
+    background-size: 100%;
+    margin: 20px auto;
+}
+
+/*배너1*/
+.banner{
+    color: #fff;
+}
+.banner li{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2px;
+}
+.banner li h3{
+    padding-top: 140px;
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.banner li p{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.banner .banner_01{
+    background: url(../main/brandSite_img01.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner .banner_02{
+    background: url(../main/brandSite_img02.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner .banner_03{
+    background: url(../main/brandSite_img03.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*배너2*/
+.banner2{}
+.banner2 li{
+    width: calc(50% - 1px);
+    float: left;
+    margin-right: 2px;
+}
+.banner2 li:nth-child(2n){
+     margin-right: 0; 
+}
+.banner2 li:nth-child(3n),.banner2 li:last-child{
+    margin-top: 2px;
+}
+.banner2 li a{}
+.banner2text h5,.banner2text p{
+    margin-left: 20px;
+}
+.banner2text{
+    height: 120px;
+    color: #fff;
+    display: block;
+    background: #1C97FE;
+}
+.banner2text h5{
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner2text p{
+    margin-right: 20px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.bannerh{
+    height: 135px;
+}
+.banner2 .banner2_01{
+    background: url(../main/center_img01.jpg) no-repeat ;
+    background-size: cover;
+}
+.banner2 .banner2_02{
+    background: url(../main/center_img02.jpg)  no-repeat ;
+    background-size: cover;
+}
+.banner2 .banner2_03{
+    background: url(../main/center_img03.jpg)  no-repeat ;
+    background-size: cover;
+}
+.banner2 .banner2_04{
+    background: url(../main/center_img04.jpg)  no-repeat ;
+    background-size: cover;
+}
+.banner2text .h5text{
+    font-size: 16px;
+}
+.texth{
+    height: 132px
+}
+
+/*배너3*/
+.product_view{
+    background: url(../main/brandSite_title02.png) no-repeat center center;
+    background-size: 100%;
+    width: 160px;
+}
+
+.banner3{}
+.banner3 li{
+    float: left;
+    width: 50%;
+    height: 140px;
+}
+.banner3 .pic_01{
+    background: url(../main/proView_img01.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 50%;
+}
+.banner3 .text_01{
+    color: #333;
+    background: #F1F1F1;
+}
+.banner3 .text_01 h3{
+    margin: 10%;
+    font-size: 17px;
+}
+.banner3 .text_01 p{
+    font-size: 11px;
+    margin: 5% 10%;
+    line-height: 16px;
+}
+.banner3 .pic_02{
+    background: url(../main/proView_img02.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 50%;
+}
+.banner3 .pic_03{
+    background: url(../main/proView_img03.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 50%;
+    height: 170px;
+}
+.banner3 .texth2{
+    height: 170px;
+}
+.banner3 .texth2 h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.banner3 .pic_04{
+    background: url(../main/proView_img04.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 50%;
+}
+
+/*푸터*/
+#footer{
+    color: #fff;
+    text-align: center;
+    background: url(../common/bg_footer_new.gif);
+
+}
+.fInfo{
+    font-size: 0;
+    font-size: 7px;
+    padding: 12px 0;
+}
+
+.fbox{
+    padding-bottom: 20px;
+}
+.fbox li:first-child{
+    margin-right: 20px;
+}
+.fbox li{
+    display: inline-block;
+    
+}
+.fbox li a{
+    display: block;
+    color: #fff;
+    padding: 2px 4px;
+    border: 1px solid #888;
+    font-size: 12px;
+}
